@@ -23,12 +23,16 @@ export default function Navbar() {
                     </Link>
                 </div>
                 <div className="flex items-center gap-6">
-                    <h2 className="text-secondaryblue md:text-sm xl:text-lg">
-                        Sign In
-                    </h2>
-                    <Button variant="default" size="lg" className="bg-primaryblue">
-                        Get Started
-                    </Button>
+                    <Link href="/login">
+                        <h2 className="text-secondaryblue md:text-sm xl:text-lg">
+                            Sign In
+                        </h2>
+                    </Link>
+                    <Link href="/register">
+                        <Button variant="default" size="lg" className="bg-primaryblue cursor-pointer">
+                            Get Started
+                        </Button>
+                    </Link>
                 </div>
             </div>
 
@@ -37,12 +41,16 @@ export default function Navbar() {
                     EventHub
                 </h1>
                 <div className="flex items-center gap-6">
-                    <h2 className="text-secondaryblue md:text-sm xl:text-lg">
-                        Sign In
-                    </h2>
-                    <Button variant="default" size="lg" className="bg-primaryblue">
-                        Get Started
-                    </Button>
+                    <Link href="/login">
+                        <h2 className="text-secondaryblue md:text-sm xl:text-lg">
+                            Sign In
+                        </h2>
+                    </Link>
+                    <Link href="/register">
+                        <Button variant="default" size="lg" className="bg-primaryblue">
+                            Get Started
+                        </Button>
+                    </Link>
                 </div>
 
             </div>
