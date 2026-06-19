@@ -13,7 +13,7 @@ export default function RegisterPage() {
     const {
         register,
         handleSubmit,
-        formState: { isLoading, errors },
+        formState: { isSubmitting, errors },
     } = useForm<TRegisterSchema>({
         resolver: zodResolver(registerSchema),
         defaultValues: {
@@ -65,8 +65,8 @@ export default function RegisterPage() {
                 </div>
 
                 <div className="mx-10 mt-4">
-                    <Button type="submit" variant="default" size="xl" disabled={isLoading} className={cn("w-full bg-white text-black font-inter-700 hover:bg-white/70 cursor-pointer")}>
-                        Submit
+                    <Button type="submit" variant="default" size="xl" disabled={isSubmitting} className={cn("w-full bg-white text-black font-inter-700 hover:bg-white/70 cursor-pointer")}>
+                        {isSubmitting ? "Loading..." : "Sign Up"}
                     </Button>
                 </div>
             </form>
