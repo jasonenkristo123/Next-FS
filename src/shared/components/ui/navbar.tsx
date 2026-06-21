@@ -16,11 +16,6 @@ export default function Navbar() {
                             Home
                         </p>
                     </Link>
-                    <Link href="/events">
-                        <p className="font-inter-600 text-primaryblue md:text-lg xl:text-xl">
-                            Events
-                        </p>
-                    </Link>
                 </div>
                 <div className="flex items-center gap-6">
                     <Link href="/login">
