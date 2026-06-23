@@ -2,9 +2,9 @@
 
 function dashboardAdmin() {
   return (
-    <div>
+    <section>
       
-    </div>
+    </section>
   )
 }
 
